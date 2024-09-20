@@ -1,12 +1,12 @@
 const imagenes = [
-  "/Parejas/resources/Squirtle.jpg",
-  "/Parejas/resources/Pikachu.jpg",
-  "/Parejas/resources/Eevee.jpg",
-  "/Parejas/resources/Togepi.jpg",
-  "/Parejas/resources/Jigglypuff.jpg",
-  "/Parejas/resources/Bulbasaur.jpg",
-  "/Parejas/resources/Psyduck.jpg",
-  "/Parejas/resources/Charmander.jpg",
+  "resources/Squirtle.jpg",
+  "resources/Pikachu.jpg",
+  "resources/Eevee.jpg",
+  "resources/Togepi.jpg",
+  "resources/Jigglypuff.jpg",
+  "resources/Bulbasaur.jpg",
+  "resources/Psyduck.jpg",
+  "resources/Charmander.jpg",
 ];
 
 const cards = Array.from(document.getElementsByClassName("card"));
