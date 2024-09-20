@@ -44,10 +44,12 @@ for (let i = 0; i < imagenes.length; i++) {
 }
 
 function storeCardValue(idCard) {
-  if (lock) {
+  const card = document.getElementById(idCard);
+
+  if (lock || card.classList.contains("rotateEffect")) {
     return;
   }
-  const card = document.getElementById(idCard);
+
   cardSet.add(card);
 
   if (cardSet.values().next().id == card.id && isActive) {
@@ -127,6 +129,7 @@ function setScore() {
   document.getElementById(currentPlayer).value = Number(scoreValue) + 1;
 
   if (cardCount == 8) {
+    lock = true;
     setTimeout(gameEnd, 1500);
     if (player_1.score > player_2.score) {
       console.warn("TEST1");
