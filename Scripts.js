@@ -87,6 +87,8 @@ function resetScore() {
   player_1.iconContainerRow = 0;
   player_2.iconColumn = 0;
   player_2.iconContainerRow = 0;
+  player_1.score = 0;
+  player_2.score = 0;
   document.getElementById("score_display_player_1").value = 0;
   document.getElementById("score_display_player_2").value = 0;
   Array.from(document.getElementsByClassName("board")).forEach((board) => {
